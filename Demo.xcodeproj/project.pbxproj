@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4642397227E77E400CAB83B /* FeedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C4642393227E77E300CAB83B /* FeedModel.m */; };
+		C4642398227E77E400CAB83B /* FeedLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = C4642396227E77E400CAB83B /* FeedLoader.m */; };
 		C46A2F6B223A0E1A00483C80 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C46A2F6A223A0E1A00483C80 /* AppDelegate.m */; };
 		C46A2F71223A0E1A00483C80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C46A2F6F223A0E1A00483C80 /* Main.storyboard */; };
 		C46A2F73223A0E1B00483C80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C46A2F72223A0E1B00483C80 /* Assets.xcassets */; };
@@ -16,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C4642393227E77E300CAB83B /* FeedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedModel.m; sourceTree = "<group>"; };
+		C4642394227E77E300CAB83B /* FeedLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedLoader.h; sourceTree = "<group>"; };
+		C4642395227E77E400CAB83B /* FeedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedModel.h; sourceTree = "<group>"; };
+		C4642396227E77E400CAB83B /* FeedLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedLoader.m; sourceTree = "<group>"; };
 		C46A2F66223A0E1A00483C80 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C46A2F69223A0E1A00483C80 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C46A2F6A223A0E1A00483C80 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -39,6 +45,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C4642392227E77C500CAB83B /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				C4642394227E77E300CAB83B /* FeedLoader.h */,
+				C4642396227E77E400CAB83B /* FeedLoader.m */,
+				C4642395227E77E400CAB83B /* FeedModel.h */,
+				C4642393227E77E300CAB83B /* FeedModel.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
 		C46A2F5D223A0E1A00483C80 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +75,7 @@
 		C46A2F68223A0E1A00483C80 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				C4642392227E77C500CAB83B /* Demo */,
 				C46A2F80223A0E4100483C80 /* DemoViewController.h */,
 				C46A2F7F223A0E4100483C80 /* DemoViewController.m */,
 				C46A2F69223A0E1A00483C80 /* AppDelegate.h */,
@@ -141,9 +159,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4642398227E77E400CAB83B /* FeedLoader.m in Sources */,
 				C46A2F79223A0E1B00483C80 /* main.m in Sources */,
 				C46A2F6B223A0E1A00483C80 /* AppDelegate.m in Sources */,
 				C46A2F81223A0E4100483C80 /* DemoViewController.m in Sources */,
+				C4642397227E77E400CAB83B /* FeedModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
