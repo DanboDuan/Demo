@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "DemoViewController.h"
+#import "SceneDelegate.h"
 
 @interface AppDelegate ()
 
@@ -15,16 +16,25 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    if (@available(iOS 13, *)) {
 
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[DemoViewController new]];
-    self.window.rootViewController = nav;
-    [self.window makeKeyAndVisible];
+    } else {
+        UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[DemoViewController new]];
+        window.rootViewController = nav;
+        [window makeKeyAndVisible];
+        self.window = window;
+    }
 
     return YES;
 }
 
 
+- (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options API_AVAILABLE(ios(11)) {
+    UISceneConfiguration *config = [[UISceneConfiguration alloc] initWithName:@"Default Configuration" sessionRole:connectingSceneSession.role];
+    config.delegateClass = [SceneDelegate class];
+    return config;
+}
 
 @end

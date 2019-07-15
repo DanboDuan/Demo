@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *actionVCName;
-@property (nonatomic, assign) NSInteger actionName;
+@property (nonatomic, copy) dispatch_block_t actionBlock;
 
 @end
 

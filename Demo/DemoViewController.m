@@ -56,6 +56,8 @@ NSString * const CellReuseIdentifier = @"UITableViewCell_ri";
         UIViewController *vc = (UIViewController *)[NSClassFromString(model.actionVCName) new];
         vc.navigationItem.title = model.title;
         [self.navigationController pushViewController:vc animated:YES];
+    } else if (model.actionBlock) {
+        model.actionBlock();
     }
 }
 

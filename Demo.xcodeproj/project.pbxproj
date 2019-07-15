@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C44D932722DC0F09008812D1 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C44D932622DC0F09008812D1 /* SceneDelegate.m */; };
 		C4642397227E77E400CAB83B /* FeedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C4642393227E77E300CAB83B /* FeedModel.m */; };
 		C4642398227E77E400CAB83B /* FeedLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = C4642396227E77E400CAB83B /* FeedLoader.m */; };
 		C46A2F6B223A0E1A00483C80 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C46A2F6A223A0E1A00483C80 /* AppDelegate.m */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C44D932522DC0F09008812D1 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		C44D932622DC0F09008812D1 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		C4642393227E77E300CAB83B /* FeedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedModel.m; sourceTree = "<group>"; };
 		C4642394227E77E300CAB83B /* FeedLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedLoader.h; sourceTree = "<group>"; };
 		C4642395227E77E400CAB83B /* FeedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedModel.h; sourceTree = "<group>"; };
@@ -45,6 +48,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C44D932422DC0DF8008812D1 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				C44D932522DC0F09008812D1 /* SceneDelegate.h */,
+				C44D932622DC0F09008812D1 /* SceneDelegate.m */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
 		C4642392227E77C500CAB83B /* Demo */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +87,7 @@
 		C46A2F68223A0E1A00483C80 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				C44D932422DC0DF8008812D1 /* Scene */,
 				C4642392227E77C500CAB83B /* Demo */,
 				C46A2F80223A0E4100483C80 /* DemoViewController.h */,
 				C46A2F7F223A0E4100483C80 /* DemoViewController.m */,
@@ -160,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4642398227E77E400CAB83B /* FeedLoader.m in Sources */,
+				C44D932722DC0F09008812D1 /* SceneDelegate.m in Sources */,
 				C46A2F79223A0E1B00483C80 /* main.m in Sources */,
 				C46A2F6B223A0E1A00483C80 /* AppDelegate.m in Sources */,
 				C46A2F81223A0E4100483C80 /* DemoViewController.m in Sources */,
@@ -240,7 +254,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -293,7 +307,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -313,7 +327,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Demo.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -329,7 +343,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Demo.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

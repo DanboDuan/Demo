@@ -8,6 +8,7 @@
 
 #import "FeedLoader.h"
 #import "FeedModel.h"
+#import <UIKit/UIKit.h>
 
 @implementation FeedLoader
 
