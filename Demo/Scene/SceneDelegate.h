@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-API_AVAILABLE(ios(11))
+API_AVAILABLE(ios(13.0))
 @interface SceneDelegate : UIResponder <UIWindowSceneDelegate>
 
 @property (nullable, nonatomic, strong) UIWindow *window;
